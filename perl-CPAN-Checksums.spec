@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Checksums
-%define upstream_version 2.05
+%define upstream_version 2.06
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
