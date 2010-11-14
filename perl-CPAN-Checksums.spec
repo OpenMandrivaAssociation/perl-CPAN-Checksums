@@ -46,6 +46,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %check
 rm -f *.list
+rm -f t/00signature.t
 %make test
 
 %install
