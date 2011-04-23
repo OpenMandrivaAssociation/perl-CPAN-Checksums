@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Write a C<CHECKSUMS> file for a directory as on CPAN
 License:    GPL+ or Artistic
