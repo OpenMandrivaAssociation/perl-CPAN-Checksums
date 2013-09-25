@@ -1,15 +1,15 @@
 %define upstream_name    CPAN-Checksums
-%define upstream_version 2.07
+%define upstream_version 2.08
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Write a C<CHECKSUMS> file for a directory as on CPAN
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CPAN/CPAN-Checksums-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Compress::Bzip2)
@@ -82,3 +82,4 @@ rm -f t/00signature.t
 
 * Thu Dec 24 2009 cpan2dist 2.04-1mdv
 - initial mdv release, generated with cpan2dist
+

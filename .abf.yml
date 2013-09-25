@@ -1,2 +1,4 @@
+removed_sources:
+  CPAN-Checksums-2.07.tar.gz: d75ff8fe1f8b1ba0d8ccdd138d13210efb14a33b
 sources:
-  "CPAN-Checksums-2.07.tar.gz": d75ff8fe1f8b1ba0d8ccdd138d13210efb14a33b
+  CPAN-Checksums-2.08.tar.gz: 30ffb847cf6fb9d25c966292723f69b61087f066
