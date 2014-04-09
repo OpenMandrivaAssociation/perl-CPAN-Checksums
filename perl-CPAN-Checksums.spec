@@ -1,15 +1,16 @@
 %define upstream_name    CPAN-Checksums
-%define upstream_version 2.08
+%define upstream_version 2.09
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Write a C<CHECKSUMS> file for a directory as on CPAN
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/CPAN-Checksums-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Compress::Bzip2)
@@ -57,29 +58,4 @@ rm -f t/00signature.t
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 2.70.0-2mdv2011.0
-+ Revision: 656883
-- rebuild for updated spec-helper
-
-* Sun Nov 21 2010 Guillaume Rousse <guillomovitch@mandriva.org> 2.70.0-1mdv2011.0
-+ Revision: 599549
-- update to new version 2.07
-
-* Sun Nov 14 2010 Jérôme Quelin <jquelin@mandriva.org> 2.60.0-1mdv2011.0
-+ Revision: 597485
-- remove signature tests
-- update to 2.06
-
-* Sun Jan 24 2010 Jérôme Quelin <jquelin@mandriva.org> 2.50.0-1mdv2011.0
-+ Revision: 495425
-- update to 2.05
-
-* Thu Dec 24 2009 Jérôme Quelin <jquelin@mandriva.org> 2.40.0-1mdv2010.1
-+ Revision: 482125
-- import perl-CPAN-Checksums
-
-
-* Thu Dec 24 2009 cpan2dist 2.04-1mdv
-- initial mdv release, generated with cpan2dist
 
