@@ -9,7 +9,7 @@ Summary:	Write a C<CHECKSUMS> file for a directory as on CPAN
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
