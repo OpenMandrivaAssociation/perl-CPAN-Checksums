@@ -1,16 +1,14 @@
 %define upstream_name    CPAN-Checksums
-%define upstream_version 2.14
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.14
+Release:	2
 
 Summary:	Write a C<CHECKSUMS> file for a directory as on CPAN
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/andk/cpan-checksums
-Source0:	https://cpan.metacpan.org/authors/id/A/AN/ANDK/CPAN-Checksums-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AN/ANDK/CPAN-Checksums-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -40,7 +38,7 @@ BuildArch:	noarch
   same. In older versions it silently did nothing.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
